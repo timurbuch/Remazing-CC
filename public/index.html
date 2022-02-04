@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div
+      class="flex justify-between items-center w-screen"
+      style="height: 10vh"
+    >
+      <div class="w-44 border-r border-slate-300 md:pr-2 py-4 px-4">
+        <a>
+          <img
+            src="./images/logo.svg"
+            alt="Remazing Logo"
+            class="w-24 md:w-32"
+            height="144"
+            width="144"
+          />
+        </a>
+      </div>
+      <div class="flex-auto">
+        <div class="flex mx-1.5 gap-4 justify-end pr-16">
+          <img
+            src="./images/bell.svg"
+            alt="Bell Icon"
+            height="20"
+            width="20"
+            class="stroke-slate-500"
+          />
+          <div class="flex items-center">
+            <div class="px-1 text-xs text-gray-500 font-bold">TB</div>
+            <img
+              src="./images/avataaars.svg"
+              alt="Avatar"
+              height="28"
+              width="28"
+              class="rounded-full"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex w-screen">
+      <div
+        class="flex flex-col justify-items-start min-w-min pt-8 bg-white border-t border-slate-300 border-r"
+        style="height: 80vh"
+      >
+        <div class="text-xs font-bold text-slate-500 w-44">
+          <ul class="flex flex-col justify-evenly h-auto w-full">
+            <li>
+              <div
+                class="flex gap-2 justify-items-center w-full pl-4 py-2 bg-white text-slate-500 hover:bg-highlight-bg hover:text-highlight-text"
+              >
+                <img
+                  src="./images/home.svg"
+                  alt="Home Icon"
+                  height="20"
+                  width="20"
+                />
+                <div class="text-left">Dashboard</div>
+              </div>
+            </li>
+            <li>
+              <div
+                class="flex gap-2 justify-items-center w-full pl-4 py-2 hover:bg-highlight-bg hover:text-highlight-text"
+              >
+                <img
+                  src="./images/dashboard.svg"
+                  alt=""
+                  height="20"
+                  width="20"
+                />
+                <div class="text-left">Content Management</div>
+              </div>
+            </li>
+            <li>
+              <div
+                class="flex gap-2 justify-items-center w-full pl-4 py-2 hover:bg-highlight-bg hover:text-highlight-text"
+              >
+                <img src="./images/chart.svg" alt="" height="20" width="20" />
+                <div class="text-left">Monitoring</div>
+              </div>
+            </li>
+            <li>
+              <div
+                class="flex gap-2 justify-items-center w-full pl-8 py-2 hover:bg-highlight-bg hover:text-highlight-text"
+              >
+                <img src="./images/bulb.svg" alt="" height="20" width="20" />
+                <div class="text-left">Content</div>
+              </div>
+            </li>
+            <li>
+              <div
+                class="flex gap-2 justify-items-center w-full pl-4 py-2 hover:bg-highlight-bg hover:text-highlight-text"
+              >
+                <img src="./images/cog.svg" alt="" height="20" width="20" />
+                <div class="text-left">Accounts</div>
+              </div>
+            </li>
+            <li>
+              <div
+                class="flex gap-2 justify-items-center w-full pl-8 py-2 hover:bg-highlight-bg hover:text-highlight-text"
+              >
+                <img src="./images/users.svg" alt="" height="20" width="20" />
+                <div class="text-left">Brands</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="flex-auto bg-brand-main border-t border-slate-300"
+        style="height: 80vh"
+      >
+        <div
+          class="font-bold pl-4 flex items-center border-b border-slate-300 bg-brand-header text-slate-500"
+          style="height: 10vh"
+        >
+          Brands
+        </div>
+        <div class="flex flex-col items-center w-full">
+          <div
+            class="flex items-center justify-between w-full pl-2 pr-16"
+            style="height: 10vh"
+          >
+            <h3 class="flex pl-8 font-medium text-slate-600">
+              Your Brands
+              <img
+                src="./images/chevron.svg"
+                alt=""
+                height="22"
+                width="22"
+                class="pl-1"
+              />
+            </h3>
+            <div
+              class="text-sm p-1 flex border-solid justify-between border border-slate-300 w-1/3"
+            >
+              <input
+                class="bg-brand-main text-slate-500 w-10/12"
+                type="text"
+                placeholder="Search brands...."
+              />
+              <img
+                src="./images/search.svg"
+                alt="Search Icon"
+                height="28"
+                width="28"
+              />
+            </div>
+            <div class="flex">
+              <img
+                src="./images/grid.svg"
+                alt="Grid Icon"
+                height="36"
+                width="36"
+              />
+              <img
+                src="./images/hamburger.svg"
+                alt="Hamburger Icon"
+                height="36"
+                width="36"
+              />
+            </div>
+          </div>
+          <div
+            class="bg-brand-main grid grid-cols-3 md:grid-cols-4 overflow-auto gap-8 p-2 pr-16 w-full"
+          >
+            <div
+              class="bg-white border-solid border border-slate-300 shadow-md col-span-1 align-middle relative group"
+              style="height: 10rem; width: 10rem"
+            >
+              <div
+                class="h-40 w-40 relative opacity-100 group-hover:opacity-10"
+              >
+                <img
+                  src="./brands/Evil.png"
+                  alt=""
+                  class="absolute top-8 left-8 w-3/5 m-auto text-center"
+                />
+              </div>
+              <div
+                class="absolute top-0 text-xs font-semibold opacity-0 group-hover:opacity-100 w-full"
+                style="height: 10rem"
+              >
+                <ul
+                  class="flex flex-col items-center justify-around h-full py-4"
+                >
+                  <li>
+                    <a href="" class="hover:text-highlight-button"
+                      >All Phases</a
+                    >
+                  </li>
+                  <li>
+                    <a href="" class="hover:text-highlight-button"
+                      >Monitoring</a
+                    >
+                  </li>
+                  <li>
+                    <a href="" class="hover:text-highlight-button"
+                      >Amazon Cases</a
+                    >
+                  </li>
+                  <li>
+                    <button
+                      class="bg-highlight-button rounded-3xl w-32 text-white font-semibold py-1"
+                    >
+                      Dashboard
+                    </button>
+                  </li>
+                  <li>
+                    <button class="bg-white font-semibold rounded-3xl py-1">
+                      Product Catalog
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="bg-white border-solid border border-slate-300 shadow-md col-span-1 align-middle relative group"
+              style="height: 10rem; width: 10rem"
+            >
+              <div
+                class="h-40 w-40 relative opacity-100 group-hover:opacity-10"
+              >
+                <img
+                  src="./brands/Circle.png"
+                  alt=""
+                  class="absolute top-8 left-8 w-3/5 m-auto text-center"
+                />
+              </div>
+              <div
+                class="absolute top-0 text-xs font-semibold opacity-0 group-hover:opacity-100 w-full"
+                style="height: 10rem"
+              >
+                <ul
+                  class="flex flex-col items-center justify-around h-full py-4"
+                >
+                  <li>
+                    <a href="" class="hover:text-highlight-button"
+                      >All Phases</a
+                    >
+                  </li>
+                  <li>
+                    <a href="" class="hover:text-highlight-button"
+                      >Monitoring</a
+                    >
+                  </li>
+                  <li>
+                    <a href="" class="hover:text-highlight-button"
+                      >Amazon Cases</a
+                    >
+                  </li>
+                  <li>
+                    <button
+                      class="bg-highlight-button rounded-3xl w-32 text-white font-semibold py-1"
+                    >
+                      Dashboard
+                    </button>
+                  </li>
+                  <li>
+                    <button class="bg-white font-semibold rounded-3xl py-1">
+                      Product Catalog
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="bg-white border-solid border border-slate-300 shadow-md col-span-1 align-middle relative group"
+              style="height: 10rem; width: 10rem"
+            >
+              <div
+                class="h-40 w-40 relative opacity-100 group-hover:opacity-10"
+              >
+                <img
+                  src="./brands/Wayne.png"
+                  alt=""
+                  class="absolute top-8 left-8 w-3/5 m-auto text-center"
+                />
+              </div>
+              <div
+                class="absolute top-0 text-xs font-semibold opacity-0 group-hover:opacity-100 w-full"
+                style="height: 10rem"
+              >
+                <ul
+                  class="flex flex-col items-center justify-around h-full py-4"
+                >
+                  <li>
+                    <a href="" class="hover:text-highlight-button"
+                      >All Phases</a
+                    >
+                  </li>
+                  <li>
+                    <a href="" class="hover:text-highlight-button"
+                      >Monitoring</a
+                    >
+                  </li>
+                  <li>
+                    <a href="" class="hover:text-highlight-button"
+                      >Amazon Cases</a
+                    >
+                  </li>
+                  <li>
+                    <button
+                      class="bg-highlight-button rounded-3xl w-32 text-white font-semibold py-1"
+                    >
+                      Dashboard
+                    </button>
+                  </li>
+                  <li>
+                    <button class="bg-white font-semibold rounded-3xl py-1">
+                      Product Catalog
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="bg-white border-solid border border-slate-300 shadow-md col-span-1 align-middle relative group"
+              style="height: 10rem; width: 10rem"
+            >
+              <div
+                class="h-40 w-40 relative opacity-100 group-hover:opacity-10"
+              >
+                <img
+                  src="./brands/Umbrella.png"
+                  alt=""
+                  class="absolute top-8 left-8 w-3/5 m-auto text-center"
+                />
+              </div>
+              <div
+                class="absolute top-0 text-xs font-semibold opacity-0 group-hover:opacity-100 w-full"
+                style="height: 10rem"
+              >
+                <ul
+                  class="flex flex-col items-center justify-around h-full py-4"
+                >
+                  <li>
+                    <a href="" class="hover:text-highlight-button"
+                      >All Phases</a
+                    >
+                  </li>
+                  <li>
+                    <a href="" class="hover:text-highlight-button"
+                      >Monitoring</a
+                    >
+                  </li>
+                  <li>
+                    <a href="" class="hover:text-highlight-button"
+                      >Amazon Cases</a
+                    >
+                  </li>
+                  <li>
+                    <button
+                      class="bg-highlight-button rounded-3xl w-32 text-white font-semibold py-1"
+                    >
+                      Dashboard
+                    </button>
+                  </li>
+                  <li>
+                    <button class="bg-white font-semibold rounded-3xl py-1">
+                      Product Catalog
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="bg-white border-solid border border-slate-300 shadow-md col-span-1 align-middle relative group"
+              style="height: 10rem; width: 10rem"
+            >
+              <div
+                class="h-40 w-40 relative opacity-100 group-hover:opacity-10"
+              >
+                <img
+                  src="./brands/Oscorp.png"
+                  alt=""
+                  class="absolute top-8 left-8 w-3/5 m-auto text-center"
+                />
+              </div>
+              <div
+                class="absolute top-0 text-xs font-semibold opacity-0 group-hover:opacity-100 w-full"
+                style="height: 10rem"
+              >
+                <ul
+                  class="flex flex-col items-center justify-around h-full py-4"
+                >
+                  <li>
+                    <a href="" class="hover:text-highlight-button"
+                      >All Phases</a
+                    >
+                  </li>
+                  <li>
+                    <a href="" class="hover:text-highlight-button"
+                      >Monitoring</a
+                    >
+                  </li>
+                  <li>
+                    <a href="" class="hover:text-highlight-button"
+                      >Amazon Cases</a
+                    >
+                  </li>
+                  <li>
+                    <button
+                      class="bg-highlight-button rounded-3xl w-32 text-white font-semibold py-1"
+                    >
+                      Dashboard
+                    </button>
+                  </li>
+                  <li>
+                    <button class="bg-white font-semibold rounded-3xl py-1">
+                      Product Catalog
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="bg-white border-solid border border-slate-300 shadow-md col-span-1 align-middle relative group"
+              style="height: 10rem; width: 10rem"
+            >
+              <div
+                class="h-40 w-40 relative opacity-100 group-hover:opacity-10"
+              >
+                <img
+                  src="./brands/StarkIndustries.png"
+                  alt=""
+                  class="absolute top-8 left-8 w-3/5 m-auto text-center"
+                />
+              </div>
+              <div
+                class="absolute top-0 text-xs font-semibold opacity-0 group-hover:opacity-100 w-full"
+                style="height: 10rem"
+              >
+                <ul
+                  class="flex flex-col items-center justify-around h-full py-4"
+                >
+                  <li>
+                    <a href="" class="hover:text-highlight-button"
+                      >All Phases</a
+                    >
+                  </li>
+                  <li>
+                    <a href="" class="hover:text-highlight-button"
+                      >Monitoring</a
+                    >
+                  </li>
+                  <li>
+                    <a href="" class="hover:text-highlight-button"
+                      >Amazon Cases</a
+                    >
+                  </li>
+                  <li>
+                    <button
+                      class="bg-highlight-button rounded-3xl w-32 text-white font-semibold py-1"
+                    >
+                      Dashboard
+                    </button>
+                  </li>
+                  <li>
+                    <button class="bg-white font-semibold rounded-3xl py-1">
+                      Product Catalog
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div
+              class="bg-white border-solid border border-slate-300 shadow-md col-span-1 align-middle relative group"
+              style="height: 10rem; width: 10rem"
+            >
+              <div
+                class="h-40 w-40 relative opacity-100 group-hover:opacity-10"
+              >
+                <img
+                  src="./brands/McDowells.png"
+                  alt=""
+                  class="absolute top-8 left-8 w-3/5 m-auto text-center"
+                />
+              </div>
+              <div
+                class="absolute top-0 text-xs font-semibold opacity-0 group-hover:opacity-100 w-full"
+                style="height: 10rem"
+              >
+                <ul
+                  class="flex flex-col items-center justify-around h-full py-4"
+                >
+                  <li>
+                    <a href="" class="hover:text-highlight-button"
+                      >All Phases</a
+                    >
+                  </li>
+                  <li>
+                    <a href="" class="hover:text-highlight-button"
+                      >Monitoring</a
+                    >
+                  </li>
+                  <li>
+                    <a href="" class="hover:text-highlight-button"
+                      >Amazon Cases</a
+                    >
+                  </li>
+                  <li>
+                    <button
+                      class="bg-highlight-button rounded-3xl w-32 text-white font-semibold py-1"
+                    >
+                      Dashboard
+                    </button>
+                  </li>
+                  <li>
+                    <button class="bg-white font-semibold rounded-3xl py-1">
+                      Product Catalog
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="bg-white border-solid border border-slate-300 shadow-md col-span-1 align-middle relative group"
+              style="height: 10rem; width: 10rem"
+            >
+              <div
+                class="h-40 w-40 relative opacity-100 group-hover:opacity-10"
+              >
+                <img
+                  src="./brands/IPS.png"
+                  alt=""
+                  class="absolute top-8 left-8 w-3/5 m-auto text-center"
+                />
+              </div>
+              <div
+                class="absolute top-0 text-xs font-semibold opacity-0 group-hover:opacity-100 w-full"
+                style="height: 10rem"
+              >
+                <ul
+                  class="flex flex-col items-center justify-around h-full py-4"
+                >
+                  <li>
+                    <a href="" class="hover:text-highlight-button"
+                      >All Phases</a
+                    >
+                  </li>
+                  <li>
+                    <a href="" class="hover:text-highlight-button"
+                      >Monitoring</a
+                    >
+                  </li>
+                  <li>
+                    <a href="" class="hover:text-highlight-button"
+                      >Amazon Cases</a
+                    >
+                  </li>
+                  <li>
+                    <button
+                      class="bg-highlight-button rounded-3xl w-32 text-white font-semibold py-1"
+                    >
+                      Dashboard
+                    </button>
+                  </li>
+                  <li>
+                    <button class="bg-white font-semibold rounded-3xl py-1">
+                      Product Catalog
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="bg-footer flex justify-between items-center text-xs font-medium text-slate-500 border-t border-slate-300"
+      style="height: 10vh"
+    >
+      <div class="flex py-4 px-4">
+        <a href="">©2019 All rights reserved</a> | <a href="">Remazing</a>
+      </div>
+      <div class="flex py-4 px-4">
+        <a href="">Terms & Conditions</a> | <a href="">Privacy Policy</a>
+      </div>
+    </div>
+  </body>
+</html>
